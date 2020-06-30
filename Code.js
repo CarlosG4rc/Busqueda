@@ -7,7 +7,7 @@ function include (filename) {
 }
     
 function autoCompletar(){
-    var ss = SpreadsheetApp.openByUrl('https://docs.google.com/spreadsheets/d/1CJ2lBb3u6RjEkpEIFTetse4DYx_7WrnwIU3dtzMyOpQ/edit#gid=752756600');
+    var ss = SpreadsheetApp.openByUrl('https://docs.google.com/spreadsheets/d/16PoeOrXVkD46N3tOzxNbtBHSOdHuw6cB9oW12AO8gHY/edit#gid=2146330587');
     var sheet = ss.getSheetByName('Profesores');
     var data = sheet.getRange(1,1).getDataRegion().getValues();
     var nombreProf = {};
@@ -17,7 +17,7 @@ function autoCompletar(){
     return nombreProf;
 }
 function getEmail (nombre){
-    var ss = SpreadsheetApp.openByUrl('https://docs.google.com/spreadsheets/d/1CJ2lBb3u6RjEkpEIFTetse4DYx_7WrnwIU3dtzMyOpQ/edit#gid=752756600');
+    var ss = SpreadsheetApp.openByUrl('https://docs.google.com/spreadsheets/d/16PoeOrXVkD46N3tOzxNbtBHSOdHuw6cB9oW12AO8gHY/edit#gid=2146330587');
     var sheet = ss.getSheetByName('Profesores');
     var lastrowbd = sheet.getDataRange().getNumRows();
     var column = sheet.getDataRange();
@@ -33,7 +33,7 @@ function getEmail (nombre){
     return email;
 }
 function getSecc(nombre){
-    var ss = SpreadsheetApp.openByUrl('https://docs.google.com/spreadsheets/d/1CJ2lBb3u6RjEkpEIFTetse4DYx_7WrnwIU3dtzMyOpQ/edit#gid=752756600');
+    var ss = SpreadsheetApp.openByUrl('https://docs.google.com/spreadsheets/d/16PoeOrXVkD46N3tOzxNbtBHSOdHuw6cB9oW12AO8gHY/edit#gid=2146330587');
     var sheet = ss.getSheetByName('Profesores');
     var lastrowbd = sheet.getDataRange().getNumRows();
     var column = sheet.getDataRange();
